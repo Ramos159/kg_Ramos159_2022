@@ -9,7 +9,8 @@ function main(){
     const string1 = args[0].split('')
     const string2 = args[1].split('')
 
-    // OPTIONAL TEST CASE: While im not being tested on this, it is a possibility in another other program
+    ///////////////////////////////////////////////// OPTIONAL TEST CASE: ////////////////////////////////////////////////////////
+    // While im not being tested on this, it is a possibility in another other program //////////////////////////////////////////
     // theres a chance in another program the two strings would have mismatching lengths and therefore couldnt be mapped properly
     if(string1.length !== string2.length){
         console.log(false)
