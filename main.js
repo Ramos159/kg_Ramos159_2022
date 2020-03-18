@@ -1,4 +1,6 @@
 function main(){
+    
+    // assuming this will be ran from the command line as in the pdf this should just fine
 
     // these will be all the valid arguements passed from the command line in an array.
     // we splice to get rid of the first two arguments, they're irrelevant to us here.
@@ -29,8 +31,8 @@ function main(){
         // this is the current char of the string array 
         const char = string1[i]
         
-        // if table has seen current char
-        // break after reassigning false so we cn return false below
+        // if table has seen current char,
+        // break after reassigning false so we can return false below
         if(string1Table[char]){
             result = false
             break
@@ -41,8 +43,8 @@ function main(){
         }
     }
 
-    // if the first string broke out of the loop we should see false for result, print result and return null to exit
-    if(!result){
+    // if the first string broke out of the loop we should see false for result, print result and return null to exit if false
+    if(result === false){
         console.log(result)
         return null
     }
@@ -52,7 +54,7 @@ function main(){
 
     // same thing as loop for string1
     for(let i = 0;i < string2.length;i++){
-        const char = string1[i]
+        const char = string2[i]
 
         if(string2Table[char]){
             result = false
